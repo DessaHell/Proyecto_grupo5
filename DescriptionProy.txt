@@ -3,3 +3,4 @@ Aplicativo para el agendamiento de citas medicas
 Titulo: Centro medico Wisteria
 Integrantes: 
 Zahori Valeria Pereira Melo
+Andres Felipe Mozo Arango 
