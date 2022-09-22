@@ -50,6 +50,8 @@ REST_FRAMEWORK = {
     ),
 }
 
+AUTH_USER_MODEL = 'Aplication.User'
+
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
@@ -57,8 +59,8 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
     "UPDATE_LAST_LOGIN": False,
     "ALGORITHM": "HS256",
-    "USER_ID_FIELD": "documento",  # revisar
-    "USER_ID_CLAIM": "id_usuario",  # permite reconocer al usuario que esta relacionado a ese token
+    "USER_ID_FIELD": "id_usuario",  # identificador del usuario en la BD
+    "USER_ID_CLAIM": "documento",  # permite reconocer al usuario que esta relacionado a ese token
 }
 
 
