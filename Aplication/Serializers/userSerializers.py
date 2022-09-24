@@ -1,10 +1,10 @@
 from dataclasses import fields
 from xml.dom.minidom import Document
-from Aplication.Models.citas import Citas
-from Aplication.Models.horarios import Horarios
-from Aplication.Models.medicos import Medicos
-from Aplication.Models.paciente import Paciente
-from Aplication.Models.user import User
+from Aplication.models.citas import Citas
+from Aplication.models.horarios import Horarios
+from Aplication.models.medicos import Medicos
+from Aplication.models.paciente import Paciente
+from Aplication.models.user import User
 
 from rest_framework import serializers
 from .userSerializers import userSerializers

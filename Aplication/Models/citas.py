@@ -8,7 +8,7 @@ from django.db import models
 class Citas (models.Model):
     id = models.BigAutoField(primary_key=True)
     id_User=models.ForeignKey(User,related_name='usuario', on_delete=models.CASCADE)
-    id_Medico=models.ForeignKey(Medicos,related_name = "medico")
+    id_Medico=models.ForeignKey(Medicos,related_name = "medico", on_delete=models)
     id_Paciente=models.ForeignKey(Paciente,related_name = "paciente")
     fecha =models.DateField('fecha')
     id_horario = models.ForeignKey(Horarios,related_name = "horarios")
