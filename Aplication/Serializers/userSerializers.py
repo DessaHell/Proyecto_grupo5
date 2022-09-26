@@ -1,21 +1,23 @@
-from dataclasses import fields
-from xml.dom.minidom import Document
-from Aplication.Models.citas import Citas
-from Aplication.Models.horarios import Horarios
-from Aplication.Models.medicos import Medicos
-from Aplication.Models.paciente import Paciente
-from Aplication.Models.user import User
+from Aplication.models.user import User
 
 from rest_framework import serializers
-from .userSerializers import userSerializers
 
 class UserSerializer(serializers.ModelSerializer):
-    account = userSerializers()
     class Meta:
         model = User
-        fields =['id','fullName','password','documentType','document']
+        fields =['fullName', 'documentType', 'document', 'password']
 
     def create(self, data): #DESERIALIZACIÓN
-        userData = data.pop('account')
+        userData = data
         userInstance = User.objects.create(**data)
-        User.objects.create(**userData, user = userInstance)
+        return userInstance
+
+
+    def to_representation(self, obj):
+        user = User.objects.get(document = obj.document)
+        return {
+            'fullName':user.fullName,
+            'documentType': user.documentType,
+            'document': user.document,
+            'password': user.password
+        }

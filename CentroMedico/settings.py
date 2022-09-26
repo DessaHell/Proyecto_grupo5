@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": ("rest_frameworkpermission.AllowAny",),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
@@ -59,8 +59,8 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
     "UPDATE_LAST_LOGIN": False,
     "ALGORITHM": "HS256",
-    "USER_ID_FIELD": "id_usuario",  # identificador del usuario en la BD
-    "USER_ID_CLAIM": "documento",  # permite reconocer al usuario que esta relacionado a ese token
+    "USER_ID_FIELD": "document",  # identificador del usuario en la BD
+    "USER_ID_CLAIM": "document",  # permite reconocer al usuario que esta relacionado a ese token
 }
 
 

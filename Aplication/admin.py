@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .Models.user import User
-from .Models.paciente import Paciente
-from .Models.medicos import Medicos
-from .Models.horarios import Horarios
-from .Models.citas import Citas
+from .models.user import User
+from .models.paciente import Paciente
+from .models.medicos import Medicos
+from .models.horarios import Horarios
+from .models.citas import Citas
 
 admin.site.register(User)
 admin.site.register(Paciente)
