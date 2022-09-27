@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Centro médico G5</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/CentroMedico.css" />
+    <link rel="stylesheet" href="../js/CentroMedico.js" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="PortadaActua">
+      <nav class="navbar">
+        <div class="menu">
+          <div class="navbarHeader"></div>
+          <div>
+            <div>
+              <ul class="navbarTaps Lato">
+                <li><a href="../Loggin.html">Inicio</a></li>
+                <li><a href="#Registrese">Mi cuenta</a></li>
+                <li><a href="#AcercaDe">Acerca de</a></li>
+                <li><a href="#Contactenos">Contactenos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="ContenedorPrincipal">
+        <div class="ContenedorSecundario">
+            <h2 class="TituloSuperiorInicio Lato">Nombre completo</h2>
+            <input type="text" name="NombreCompleto" placeholder="Nombres y Apellidos">
+            <h2 class="TituloSuperiorInicio Lato">Tipo de Documento</h2>
+            <select class="form-control">
+                <option value="Sl">--Seleccione--</option>
+                <option value="CC">Cedula de ciudadania</option>
+                <option value="TI">Tarjeta de identidad</option>
+                <option value="PS">Pasaporte</option>
+                <option value="CE">Cedula de extranjeria</option>
+            </select>
+            <h2 class="TituloSuperiorInicio Lato">Numero de documento</h2>
+            <input type="number" name="Document" placeholder="Sin puntos">
+            <h2 class="TituloSuperiorInicio Lato">Centro de salud cercano</h2>
+            <select class="form-control">
+                <option value="Sl">--Seleccione--</option>
+                <option value="CC">Bogota D.C</option>
+                <option value="TI">Medellin</option>
+                <option value="PS">Cali</option>
+                <option value="CE">Barranquilla</option>
+            </select>
+            <h2 class="TituloSuperiorInicio Lato">Direccion de residencia</h2>
+            <input type="text" name="Direccion" placeholder="Direccion">
+            <h2 class="TituloSuperiorInicio Lato">Telefono</h2>
+            <input type="text" name="Phone" placeholder="Telefono +(indicativo)">
+            <h2 class="TituloSuperiorInicio Lato">Correo electronico</h2>
+            <input type="text" name="email" placeholder="Correo electronico">
+            <div><button type="button" class="buttoninicio">GUARDAR</button></div>
+        </div>
+    </div>
+  </body>
+</html>
