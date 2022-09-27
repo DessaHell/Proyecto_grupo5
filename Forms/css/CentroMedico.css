@@ -1,127 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Raleway:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=League+Gothic&family=Raleway:wght@400;900&display=swap");
 
+.LeagueGothic {
+  font-family: "League Gothic", sans-serif;
+}
+.Lato {
+  font-family: "Lato", sans-serif;
+}
 
-.imagenprincipal{
-    width: 100%;
+.imagenprincipal {
+  width: 100%;
 }
-.Menu{
-    background: rgb(12,16,126);
-    background: linear-gradient(90deg, rgba(12,16,126,0.938813025210084) 0%, rgba(21,61,120,1) 49%, rgba(78,81,113,1) 100%);
+.Menu {
+  background: none;
 }
-.Parrafo{
-    justify-content: center;
+.Parrafo {
+  justify-content: center;
 }
 
 .titulos {
-    color: rgb(12,16,126);
-    font-size:40px;
-
+  color: rgb(12, 16, 126);
+  font-size: 40px;
 }
 
-.register-heading{
-    color: #2A2B2A !important;
-    font-size:35px!important;
+.register-heading {
+  color: #2d3d8a !important;
+  font-size: 35px !important;
 }
 
-.btnGuardar{
-    background-color:rgb(12,16,126);
-    color: white;
-    justify-content: center;
+.btnGuardar {
+  background-color: rgb(12, 16, 126);
+  color: white;
+  justify-content: center;
 }
 
-.divmision{
-    display: flex;
-    align-items: center;
+.divmision {
+  display: flex;
+  align-items: center;
 }
 
-.register{
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    margin-top: 2%;
-    padding: 2%;
-}
-.register-left{
-    text-align: center;
-    color: #fff;
-    margin-top: 4%;
-}
-.register-left input{
-    border: none;
-    border-radius: 1.5rem;
-    padding: 2%;
-    width: 60%;
-    background: #f8f9fa;
-    font-weight: bold;
-    color: #383d41;
-    margin-top: 30%;
-    margin-bottom: 3%;
-    cursor: pointer;
-}
-.register-right{
-    background: #EFE9F4;
-    border-top-left-radius: 10% 50%;
-    border-bottom-left-radius: 10% 50%;
-    opacity: 10;
-}
-.register-left img{
-    margin-top: 5%;
-    margin-bottom: 10%;
-    width: 90%;
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+.register {
+  /* background: -webkit-linear-gradient(left, #3931af, #00c6ff); */
+  background-image: url("../imagenes/img5.jpg");
+  margin-top: 2%;
+  padding: 2%;
+  background-size: contain;
 }
 
+.register-left {
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+.register-left input {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  width: 60%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-top: 30%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.register-right {
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.register-left img {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 90%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
 
-.register-left p{
-    font-weight: lighter;
-    padding: 12%;
-    margin-top: -9%;
+.register-left p {
+  font-weight: lighter;
+  padding: 12%;
+  margin-top: -9%;
 }
-.register-form{
-    padding: 10%;
-    margin-top: 10%;
+.register-form {
+  padding: 10%;
+  margin-top: 10%;
+}
 
+.btnRegister {
+  float: right;
+  margin-top: 10%;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+.register .nav-tabs {
+  margin-top: 3%;
+  border: none;
+  background: none;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+.register .nav-tabs .nav-link {
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover {
+  border: none;
+}
+.register .nav-tabs .nav-link.active {
+  width: 100px;
+  color: none;
+  border: 2px solid none;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.register-heading {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #495057;
 }
 
-.btnRegister{
-    float: right;
-    margin-top: 10%;
-    border: none;
-    border-radius: 1.5rem;
-    padding: 2%;
-    background: #0062cc;
-    color: #fff;
-    font-weight: 600;
-    width: 50%;
-    cursor: pointer;
+.ContenedorPrincipal {
+  padding: 4% 32%;
 }
-.register .nav-tabs{
-    margin-top: 3%;
-    border: none;
-    background: #0062cc;
-    border-radius: 1.5rem;
-    width: 28%;
-    float: right;
+
+.ContenedorSecundario{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50%;
+  background-color: rgba(60, 55, 55, 0.5);
+  backdrop-filter: blur(5px);
+  margin: auto;
+  padding: 1rem;
 }
-.register .nav-tabs .nav-link{
-    padding: 2%;
-    height: 34px;
-    font-weight: 600;
-    color: #fff;
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+
+.navbar{
+  background: transparent;
+  align-items: right;
 }
-.register .nav-tabs .nav-link:hover{
-    border: none;
+
+.navbarTaps {
+  list-style-type: none;
+  text-align: center;
+  margin-right: 5%;
+  padding: 0%;
 }
-.register .nav-tabs .nav-link.active{
-    width: 100px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+.navbarTaps li{
+  display: inline;
+  text-align: center;
+  float: right;
 }
-.register-heading{
-    text-align: center;
-    margin-top: 8%;
-    margin-bottom: -15%;
-    color: #495057;
+.navbarTaps a{
+  display: block;
+  padding: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3d8a;
 }
+
+.PortadaInicio {
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img6.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TituloInicio {
+  color: antiquewhite;
+  font-size: 92px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.TituloSuperiorInicio {
+  color: #111735;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.TituloInferiorInicio {
+  color: antiquewhite;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.buttoninicio {
+  font-family: helvetica;
+  font-weight: bold;
+  color: #cccccc !important;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #666666;
+  padding: 12px 27px;
+  border-radius: 40px;
+  border: 0px solid #2d3d8a;
+  background: #4963df;
+  background: linear-gradient(to top, #4963df, #2d3d8a);
+  margin-top: 2rem;
+  text-align: left;
+}
+.buttoninicio:hover {
+  color: #cccccc !important;
+  background: #2d3d8a;
+  background: linear-gradient(to top, #7082dc, #4963df);
+}
+
+.PortadaActua {
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img1.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
