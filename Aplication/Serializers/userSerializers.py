@@ -5,10 +5,10 @@ from rest_framework import serializers
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields =['fullName', 'documentType', 'document', 'password']
+        fields =['fullName', 'documentType', 'document', 'password', 'phone', 'city', 'mail']
 
     def create(self, data): #DESERIALIZACIÓN
-        userData = data
+        userData = data.user
         userInstance = User.objects.create(**data)
         return userInstance
 
@@ -19,5 +19,8 @@ class UserSerializer(serializers.ModelSerializer):
             'fullName':user.fullName,
             'documentType': user.documentType,
             'document': user.document,
-            'password': user.password
+            'password': user.password,
+            'phone': user.phone,
+            'mail': user.mail,
+            'city': user.city
         }

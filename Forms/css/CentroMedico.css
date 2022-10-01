@@ -133,6 +133,11 @@
   color: #495057;
 }
 
+.form-control {
+  width: 60%;
+  margin: auto;
+}
+
 .ContenedorPrincipal {
   padding: 4% 32%;
 }
@@ -187,6 +192,21 @@
   background-size: cover;
 }
 
+.PortadaAcerca {
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img5.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .TituloInicio {
   color: antiquewhite;
   font-size: 92px;
@@ -204,6 +224,20 @@
 .TituloInferiorInicio {
   color: antiquewhite;
   font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.TituloSuperiorAcerca {
+  color: #111735;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.TituloInferiorAcerca {
+  color: antiquewhite;
+  font-size: 20px;
   text-align: left;
   font-weight: 400;
 }
@@ -232,9 +266,8 @@
   max-width: 100%;
   /* The image used */
   background-image: url("../imagenes/img1.jpg");
-
   /* Set a specific height */
-  height: 100vh;
+  min-height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
