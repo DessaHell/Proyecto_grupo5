@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.backends import TokenBackend
 from django.conf import settings
-from Aplication.models.user import User
-from Aplication.Serializers.userSerializers import UserSerializer
+from aplication.models.user import User
+from aplication.serializers.userSerializers import UserSerializer
 
 class UserDetailView(generics.RetrieveAPIView):
     queryset = User.objects.all()

@@ -3,8 +3,8 @@ from rest_framework import status, views
 from rest_framework.response import Response
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
-from Aplication.Serializers.userSerializers import UserSerializer
-from Aplication.models.user import User
+from aplication.serializers.userSerializers import UserSerializer
+from aplication.models.user import User
 
 class UserCreateView(views.APIView):
     def post(self, request, *args, **kwargs):
