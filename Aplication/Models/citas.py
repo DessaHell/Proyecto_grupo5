@@ -6,10 +6,10 @@ from django.db import models
 
 
 class Citas (models.Model):
-    id = models.BigAutoField(primary_key=True)
-    id_User=models.ForeignKey(User, on_delete=models.CASCADE)
-    id_Medico=models.ForeignKey(Medicos, on_delete=models.CASCADE)
-    id_Paciente=models.ForeignKey(Paciente, on_delete=models.CASCADE)
+    id_cita = models.BigAutoField(primary_key=True)
+    id_usuario=models.ForeignKey(User, on_delete=models.CASCADE)
+    id_medico=models.ForeignKey(Medicos, on_delete=models.CASCADE)
+    id_paciente=models.ForeignKey(Paciente, on_delete=models.CASCADE)
     fecha =models.DateField('fecha')
     id_horario = models.ForeignKey(Horarios, on_delete=models.CASCADE)
 

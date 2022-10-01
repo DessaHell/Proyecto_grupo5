@@ -34,9 +34,10 @@ class UserManager(BaseUserManager):
 
 
 class User (AbstractBaseUser, PermissionsMixin):
+     id_usuario = models.BigAutoField('id_usuario', primary_key=True)
      fullName = models.CharField('Nombre', max_length=45)
      documentType = models.CharField('Tipo de Documento', max_length=50)
-     document = models.CharField('Documento', primary_key=True, max_length=50)
+     document = models.CharField('Documento', unique=True, max_length=50)
      password = models.CharField('Password', max_length=256)
 
      def save (self, **kwargs): #encriptar la contrasena del usuario #** los pasa como un diccionario

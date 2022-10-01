@@ -1,7 +1,7 @@
-from Aplication.models.paciente import Paciente
+from aplication.models.paciente import Paciente
 from rest_framework import serializers
 
-from Aplication.models.user import User
+from aplication.models.user import User
 
 class pacienteSerializers (serializers.ModelSerializers):
     class Meta:
