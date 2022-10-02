@@ -1,4 +1,4 @@
-"""CentroMedico URL Configuration
+"""centro_medico URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -16,13 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView)
-from Aplication import Views
+from Aplication import views
 
 urlpatterns = [
     path('login/', TokenObtainPairView.as_view()),
     path('refresh/',TokenRefreshView.as_view()),
     # path('admin/', admin.site.urls),
-    path('userCreate/', Views.UserCreateView.as_view()),
-    path('userUpdate/', Views.UserUpdateView.as_view()),
-    path('user/<int:pk>/', Views.UserDetailView.as_view())
+    path('userCreate/', views.UserCreateView.as_view()),
+    path('userUpdate/', views.UserUpdateView.as_view()),
+    path('user/<int:pk>/', views.UserDetailView.as_view())
 ]

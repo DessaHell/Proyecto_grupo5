@@ -1,4 +1,4 @@
-from Aplication.models.medicos import Medicos
+from aplication.models.medicos import Medicos
 from rest_framework import serializers
 
 
