@@ -32,6 +32,10 @@ class UserManager(BaseUserManager):
 
 
 class User (AbstractBaseUser, PermissionsMixin):
+
+    class Meta:
+        app_label = 'Aplication'
+
     fullName = models.CharField('Nombre', max_length=45)
     documentType = models.CharField('Tipo de Documento', max_length=50)
     document = models.CharField('Documento', primary_key=True, max_length=50)
