@@ -47,6 +47,3 @@ class User (AbstractBaseUser, PermissionsMixin):
 
     objects = UserManager() #cuando yo vaya a crear un usuario me va a llamar a la clase usermanager
     USERNAME_FIELD = 'document' #es con lo que los usuarios se van a autenticar  e ingresar
-
-
-
