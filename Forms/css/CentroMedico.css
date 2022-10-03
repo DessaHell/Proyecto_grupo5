@@ -7,7 +7,10 @@
 .Lato {
   font-family: "Lato", sans-serif;
 }
+.BtnCuenta{
+  margin-left: 23px;
 
+}
 .imagenprincipal {
   width: 100%;
 }
@@ -141,6 +144,12 @@
 .ContenedorPrincipal {
   padding: 4% 32%;
 }
+.ContenedorPrincipalCuenta{
+  padding: 13% 32%;
+}
+.ContenedorPrincipalAgendamiento {
+  padding: 4% 6%;
+}
 
 .ContenedorSecundario{
   justify-content: center;
@@ -152,6 +161,7 @@
   margin: auto;
   padding: 1rem;
 }
+
 
 .navbar{
   background: transparent;
@@ -196,6 +206,20 @@
   max-width: 100%;
   /* The image used */
   background-image: url("../imagenes/img5.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.PortadaACuenta {
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img3.jpg");
 
   /* Set a specific height */
   height: 100vh;
@@ -265,7 +289,47 @@
 .PortadaActua {
   max-width: 100%;
   /* The image used */
+  background-image: url("../imagenes/img2.jpg");
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.PortadaIngreso{
+  max-width: 100%;
+  /* The image used */
   background-image: url("../imagenes/img1.jpg");
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.PortadaRegistro{
+    max-width: 100%;
+    /* The image used */
+    background-image: url("../imagenes/img5.jpg");
+    /* Set a specific height */
+    min-height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.PortadaAgendamiento {
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img4.jpg");
   /* Set a specific height */
   min-height: 100vh;
 
