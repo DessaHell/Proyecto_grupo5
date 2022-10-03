@@ -50,7 +50,7 @@ REST_FRAMEWORK = {
     ),
 }
 
-AUTH_USER_MODEL = 'Aplication.models.user'
+AUTH_USER_MODEL = 'Aplication.user'
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
