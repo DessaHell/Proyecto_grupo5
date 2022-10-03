@@ -276,3 +276,24 @@
   background-size: cover;
 }
 
+.PortadaMenu {
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img3.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TitulodeMenu {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  text-align: left;
+  font-weight: 300;
+}
