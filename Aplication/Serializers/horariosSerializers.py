@@ -1,4 +1,4 @@
-from aplication.models.horarios import Horarios
+from Aplication.models.horarios import Horarios
 from rest_framework import serializers
 
 class horariosSerializers (serializers.ModelSerializers):

@@ -1,4 +1,4 @@
-from aplication.models.user import User
+from Aplication.models.user import User
 
 from rest_framework import serializers
 
@@ -8,8 +8,10 @@ class UserSerializer(serializers.ModelSerializer):
         fields =['fullName', 'documentType', 'document', 'password', 'phone', 'city', 'mail']
 
     def create(self, data): #DESERIALIZACIÓN
-        userData = data.user
         userInstance = User.objects.create(**data)
+        # Adding the below line made it work for me.
+        print(userInstance)
+        userInstance.is_active = True
         return userInstance
 
 

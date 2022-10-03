@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "aplication",
+    "Aplication",
 ]
 
 REST_FRAMEWORK = {
@@ -50,16 +50,16 @@ REST_FRAMEWORK = {
     ),
 }
 
-AUTH_USER_MODEL = 'aplication.user'
+AUTH_USER_MODEL = 'Aplication.user'
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
     "ROTATE_REFRESH_TOKENS": False,
     "BLACKLIST_AFTER_ROTATION": True,
-    "UPDATE_LAST_LOGIN": False,
+    "UPDATE_LAST_LOGIN": True,
     "ALGORITHM": "HS256",
-    "USER_ID_FIELD": "id_usuario",  # identificador del usuario en la BD
+    "USER_ID_FIELD": "document",  # identificador del usuario en la BD
     "USER_ID_CLAIM": "document",  # permite reconocer al usuario que esta relacionado a ese token
 }
 
@@ -151,3 +151,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+import django_heroku
+django_heroku.settings(locals())

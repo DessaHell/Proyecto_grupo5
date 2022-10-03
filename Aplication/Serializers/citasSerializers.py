@@ -1,4 +1,4 @@
-from aplication.models.citas import Citas
+from Aplication.models.citas import Citas
 from rest_framework import serializers
 
 

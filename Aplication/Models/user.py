@@ -32,10 +32,9 @@ class UserManager(BaseUserManager):
 
 
 class User (AbstractBaseUser, PermissionsMixin):
-    id_usuario = models.BigAutoField('id_usuario', primary_key=True)
     fullName = models.CharField('Nombre', max_length=45)
     documentType = models.CharField('Tipo de Documento', max_length=50)
-    document = models.CharField('Documento', unique=True, max_length=50)
+    document = models.CharField('Documento', primary_key=True, max_length=50)
     password = models.CharField('Password', max_length=256)
     phone = models.CharField('phone', max_length=20)
     city= models.CharField('city', max_length=20)

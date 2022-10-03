@@ -9,21 +9,26 @@ from Aplication.models.user import User
 
 class UserUpdateView(views.APIView):
     def post(self, request, *args, **kwargs):
-        userObject = UserSerializer(data = request.data)
+        ##userObject = UserSerializer(data = request.data)
 
-        url_instance = get_object_or_404(Url, pk=pk)
-        #No esta terminado, de donde sale Url y pk?
+        user_instance = get_object_or_404(User, pk=request.data["document"])
 
+        if request.data.get("city") != None:
+            user_instance.city = request.data["city"]
 
+        if request.data.get("phone") != None:
+            user_instance.phone = request.data["phone"]
 
+        if request.data.get("mail") != None:
+            user_instance.mail = request.data["mail"]
+        
+        if request.data.get("password") != None:
+            user_instance.password = request.data["password"]
 
-        serializer.save(update_fields=["password", ])
+        user_instance.save()
 
-        tokenData = {"document": request.data["document"],
-                     "password": request.data["password"]}
-        tokens = TokenObtainPairSerializer(data = tokenData)
-        tokens.is_valid(raise_exception=True)
+        user_rep = UserSerializer.to_representation(self, user_instance)
 
         #user_response = User.objects.get(document = request.data["document"])
-        return Response(tokens.validated_data, status=status.HTTP_201_CREATED)
+        return Response(user_rep, status=status.HTTP_201_CREATED)
 
