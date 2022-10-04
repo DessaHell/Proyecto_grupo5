@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Centro médico G5</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link href="../css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/CentroMedico.css" />
+  <link rel="stylesheet" href="../js/CentroMedico.js" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="PortadaAgendamiento">
+    <nav class="navbar">
+      <div class="menu">
+        <div class="navbarHeader">
+        </div>
+        <div>
+          <div>
+            <ul class="navbarTaps Lato">
+              <li><a href="./inicio.html">Inicio</a></li>
+              <li><a href="./Cuenta.html">Mi cuenta</a></li>
+              <li><a href="./acerca_de.html">Acerca de</a></li>
+              <li><a href="./contactenos.html">Contactenos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="ContenedorPrincipalAgendamiento">
+      <div class="ContenedorSecundario">
+        <div class="row">
+          <div class="col-md-6">
+            <label>Informacion del paciente</label>
+            <input>
+            <br>
+            <br>
+            <label for="start">Seleccione una fecha:</label>
+            <input class="Calendario" type="date" id="start" name="trip-start" value="" min="2022-02-10" max="2050-12-31">
+          </div>
+          <div class="col-md-5">
+            <label>Especialidad:</label>
+            <select class="form-control">
+              <option value="Sl">--Seleccione--</option>
+              <option value="PT">Pediatria</option>
+              <option value="OT">Odontologia</option>
+              <option value="GC">Ginecologia</option>
+              <option value="MG">Medicina General</option>
+            </select>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Doctor</th>
+                  <th scope="col">Consultorio</th>
+                  <th scope="col">Hora disponible</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td> -->
+                </tr>
+              </tbody>
+            </table>
+            <button type="submit" class="buttoninicio">AGENDAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
