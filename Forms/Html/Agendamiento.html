@@ -22,7 +22,7 @@
           <div>
             <ul class="navbarTaps Lato">
               <li><a href="./inicio.html">Inicio</a></li>
-              <li><a href="./Cuenta.html">Mi cuenta</a></li>
+              <li><a href="./Registrarse.html">Registrese</a></li>
               <li><a href="./acerca_de.html">Acerca de</a></li>
               <li><a href="./contactenos.html">Contactenos</a></li>
             </ul>
@@ -34,15 +34,14 @@
       <div class="ContenedorSecundario">
         <div class="row">
           <div class="col-md-6">
-            <label>Informacion del paciente</label>
-            <input>
+            <h4 class="TituloInferiorInicio Lato">Informacion del paciente: </h4>
             <br>
             <br>
-            <label for="start">Seleccione una fecha:</label>
+            <h4 class="TituloInferiorInicio Lato">Seleccione una fecha: </h4>
             <input class="Calendario" type="date" id="start" name="trip-start" value="" min="2022-02-10" max="2050-12-31">
           </div>
           <div class="col-md-5">
-            <label>Especialidad:</label>
+            <h4 class="TituloInferiorInicio Lato">Especialidad: </h4>
             <select class="form-control">
               <option value="Sl">--Seleccione--</option>
               <option value="PT">Pediatria</option>
@@ -50,8 +49,9 @@
               <option value="GC">Ginecologia</option>
               <option value="MG">Medicina General</option>
             </select>
-
-            <table class="table">
+            <br>
+            <br>
+            <table class="table TituloInferiorInicio Lato">
               <thead>
                 <tr>
                   <th scope="col">Doctor</th>
@@ -65,19 +65,10 @@
                   <td></td>
                   <td></td>
                 </tr>
-                <!-- <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td> -->
-                </tr>
               </tbody>
             </table>
-            <button type="submit" class="buttoninicio">AGENDAR</button>
+            <form action="./informaCita.html">
+            <button type="submit" class="buttoninicio">AGENDAR</button></form>
           </div>
         </div>
       </div>
