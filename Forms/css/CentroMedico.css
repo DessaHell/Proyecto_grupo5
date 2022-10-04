@@ -148,7 +148,7 @@
   padding: 13% 32%;
 }
 .ContenedorPrincipalAgendamiento {
-  padding: 4% 6%;
+  padding: 8% 18%;
 }
 
 .ContenedorSecundario{
@@ -219,7 +219,7 @@
 .PortadaACuenta {
   max-width: 100%;
   /* The image used */
-  background-image: url("../imagenes/img3.jpg");
+  background-image: url("../imagenes/img5.jpg");
 
   /* Set a specific height */
   height: 100vh;
@@ -229,6 +229,37 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.PortadaInfoCita {
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img7.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.PortadaCitasProgra{
+  max-width: 100%;
+  /* The image used */
+  background-image: url("../imagenes/img8.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .TituloInicio {
@@ -318,13 +349,13 @@
     background-image: url("../imagenes/img5.jpg");
     /* Set a specific height */
     min-height: 100vh;
-  
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
 }
 .PortadaAgendamiento {
   max-width: 100%;
@@ -343,7 +374,7 @@
 .PortadaMenu {
   max-width: 100%;
   /* The image used */
-  background-image: url("../imagenes/img3.jpg");
+  background-image: url("../imagenes/img9.jpg");
 
   /* Set a specific height */
   height: 100vh;
